@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BSKBUILD.de</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Animierter Hintergrund */
+    body {
+      background: linear-gradient(120deg, #1a1a1a, #000000);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      max-width: 90%;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #ddd;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background-color: #5865F2;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1em;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #5865F2;
+    }
+
+    .btn:hover {
+      background-color: #4752C4;
+      box-shadow: 0 0 20px #5865F2;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BSKBUILD.de</h1>
+    <p>Der Ort, an dem epische Minecraft-Bauten entstehen.</p>
+    <a class="btn" href="https://discord.gg/bskclan" target="_blank">💬 Tritt unserem Discord bei</a>
+  </div>
+  <footer>&copy; 2025 BSKBUILD.de | Alle Rechte vorbehalten</footer>
+</body>
+</html>
